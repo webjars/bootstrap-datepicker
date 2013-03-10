@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>bootstrap-datepicker</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <name>Bootstrap Datepicker</name>
     <description>WebJar for Bootstrap Datepicker</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/bootstrap-datepicker</url>
         <connection>scm:git:https://github.com/webjars/bootstrap-datepicker.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/bootstrap-datepicker.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>bootstrap-datepicker-1.0.1</tag>
     </scm>
 
     <developers>
@@ -75,10 +75,10 @@
                         <configuration>
                             <target>
                                 <echo message="unzip archive" />
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/bootstrap-datepicker-${upstreamVersion}" excludes="tests/,build/"/>
+                                    <fileset dir="${project.build.directory}/bootstrap-datepicker-${upstreamVersion}" excludes="tests/,build/" />
                                 </move>
                             </target>
                         </configuration>
