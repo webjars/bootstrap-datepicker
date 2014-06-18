@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>bootstrap-datepicker</artifactId>
-    <version>1.3.0-2-SNAPSHOT</version>
+    <version>1.3.0-2</version>
     <name>Bootstrap Datepicker</name>
     <description>WebJar for Bootstrap Datepicker</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/${project.artifactId}</url>
         <connection>scm:git:https://github.com/webjars/${project.artifactId}.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/${project.artifactId}.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>bootstrap-datepicker-1.3.0-2</tag>
     </scm>
 
     <developers>
