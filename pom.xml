@@ -44,6 +44,12 @@
         <upstreamVersion>1.3.0</upstreamVersion>
         <sourceUrl>https://github.com/eternicode/bootstrap-datepicker/archive</sourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
+        <requirejs>
+            {
+                "paths": { "bootstrap-datepicker": "js/bootstrap-datepicker" },
+                "shim": { "bootstrap-datepicker": [ "bootstrap" ] }
+            }
+        </requirejs>
     </properties>
     
     <dependencies>
