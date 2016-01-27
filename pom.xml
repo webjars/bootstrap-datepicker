@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
@@ -38,7 +38,7 @@
             <email>james@jamesward.org</email>
         </developer>
     </developers>
-    
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstreamVersion>1.4.0</upstreamVersion>
@@ -46,12 +46,140 @@
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
         <requirejs>
             {
-                "paths": { "bootstrap-datepicker": "js/bootstrap-datepicker" },
-                "shim": { "bootstrap-datepicker": [ "bootstrap" ] }
+                "paths": {
+                    "bootstrap-datepicker": "js/bootstrap-datepicker",
+                    "bootstrap-datepicker-ar" : "locales/bootstrap-datepicker.ar.min",
+                    "bootstrap-datepicker-az" : "locales/bootstrap-datepicker.az.min",
+                    "bootstrap-datepicker-bg" : "locales/bootstrap-datepicker.bg.min",
+                    "bootstrap-datepicker-bs" : "locales/bootstrap-datepicker.bs.min",
+                    "bootstrap-datepicker-ca" : "locales/bootstrap-datepicker.ca.min",
+                    "bootstrap-datepicker-cs" : "locales/bootstrap-datepicker.cs.min",
+                    "bootstrap-datepicker-cy" : "locales/bootstrap-datepicker.cy.min",
+                    "bootstrap-datepicker-da" : "locales/bootstrap-datepicker.da.min",
+                    "bootstrap-datepicker-de" : "locales/bootstrap-datepicker.de.min",
+                    "bootstrap-datepicker-el" : "locales/bootstrap-datepicker.el.min",
+                    "bootstrap-datepicker-en-GB" : "locales/bootstrap-datepicker.en-GB.min",
+                    "bootstrap-datepicker-es" : "locales/bootstrap-datepicker.es.min",
+                    "bootstrap-datepicker-et" : "locales/bootstrap-datepicker.et.min",
+                    "bootstrap-datepicker-eu" : "locales/bootstrap-datepicker.eu.min",
+                    "bootstrap-datepicker-fa" : "locales/bootstrap-datepicker.fa.min",
+                    "bootstrap-datepicker-fi" : "locales/bootstrap-datepicker.fi.min",
+                    "bootstrap-datepicker-fo" : "locales/bootstrap-datepicker.fo.min",
+                    "bootstrap-datepicker-fr-CH" : "locales/bootstrap-datepicker.fr-CH.min",
+                    "bootstrap-datepicker-fr" : "locales/bootstrap-datepicker.fr.min",
+                    "bootstrap-datepicker-gl" : "locales/bootstrap-datepicker.gl.min",
+                    "bootstrap-datepicker-he" : "locales/bootstrap-datepicker.he.min",
+                    "bootstrap-datepicker-hr" : "locales/bootstrap-datepicker.hr.min",
+                    "bootstrap-datepicker-hu" : "locales/bootstrap-datepicker.hu.min",
+                    "bootstrap-datepicker-hy" : "locales/bootstrap-datepicker.hy.min",
+                    "bootstrap-datepicker-id" : "locales/bootstrap-datepicker.id.min",
+                    "bootstrap-datepicker-is" : "locales/bootstrap-datepicker.is.min",
+                    "bootstrap-datepicker-it-CH" : "locales/bootstrap-datepicker.it-CH.min",
+                    "bootstrap-datepicker-it" : "locales/bootstrap-datepicker.it.min",
+                    "bootstrap-datepicker-ja" : "locales/bootstrap-datepicker.ja.min",
+                    "bootstrap-datepicker-ka" : "locales/bootstrap-datepicker.ka.min",
+                    "bootstrap-datepicker-kh" : "locales/bootstrap-datepicker.kh.min",
+                    "bootstrap-datepicker-kk" : "locales/bootstrap-datepicker.kk.min",
+                    "bootstrap-datepicker-kr" : "locales/bootstrap-datepicker.kr.min",
+                    "bootstrap-datepicker-lt" : "locales/bootstrap-datepicker.lt.min",
+                    "bootstrap-datepicker-lv" : "locales/bootstrap-datepicker.lv.min",
+                    "bootstrap-datepicker-me" : "locales/bootstrap-datepicker.me.min",
+                    "bootstrap-datepicker-mk" : "locales/bootstrap-datepicker.mk.min",
+                    "bootstrap-datepicker-ms" : "locales/bootstrap-datepicker.ms.min",
+                    "bootstrap-datepicker-nb" : "locales/bootstrap-datepicker.nb.min",
+                    "bootstrap-datepicker-nl-BE" : "locales/bootstrap-datepicker.nl-BE.min",
+                    "bootstrap-datepicker-nl" : "locales/bootstrap-datepicker.nl.min",
+                    "bootstrap-datepicker-no" : "locales/bootstrap-datepicker.no.min",
+                    "bootstrap-datepicker-pl" : "locales/bootstrap-datepicker.pl.min",
+                    "bootstrap-datepicker-pt-BR" : "locales/bootstrap-datepicker.pt-BR.min",
+                    "bootstrap-datepicker-pt" : "locales/bootstrap-datepicker.pt.min",
+                    "bootstrap-datepicker-ro" : "locales/bootstrap-datepicker.ro.min",
+                    "bootstrap-datepicker-rs-latin" : "locales/bootstrap-datepicker.rs-latin.min",
+                    "bootstrap-datepicker-rs" : "locales/bootstrap-datepicker.rs.min",
+                    "bootstrap-datepicker-ru" : "locales/bootstrap-datepicker.ru.min",
+                    "bootstrap-datepicker-sk" : "locales/bootstrap-datepicker.sk.min",
+                    "bootstrap-datepicker-sl" : "locales/bootstrap-datepicker.sl.min",
+                    "bootstrap-datepicker-sq" : "locales/bootstrap-datepicker.sq.min",
+                    "bootstrap-datepicker-sr-latin" : "locales/bootstrap-datepicker.sr-latin.min",
+                    "bootstrap-datepicker-sr" : "locales/bootstrap-datepicker.sr.min",
+                    "bootstrap-datepicker-sv" : "locales/bootstrap-datepicker.sv.min",
+                    "bootstrap-datepicker-sw" : "locales/bootstrap-datepicker.sw.min",
+                    "bootstrap-datepicker-th" : "locales/bootstrap-datepicker.th.min",
+                    "bootstrap-datepicker-tr" : "locales/bootstrap-datepicker.tr.min",
+                    "bootstrap-datepicker-uk" : "locales/bootstrap-datepicker.uk.min",
+                    "bootstrap-datepicker-vi" : "locales/bootstrap-datepicker.vi.min",
+                    "bootstrap-datepicker-zh-CN" : "locales/bootstrap-datepicker.zh-CN.min",
+                    "bootstrap-datepicker-zh-TW" : "locales/bootstrap-datepicker.zh-TW.min"
+                },
+                "shim": {
+                    "bootstrap-datepicker": [ "bootstrap" ],
+                    "bootstrap-datepicker-ar" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-az" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-bg" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-bs" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-ca" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-cs" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-cy" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-da" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-de" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-el" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-en-GB" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-es" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-et" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-eu" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-fa" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-fi" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-fo" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-fr-CH" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-fr" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-gl" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-he" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-hr" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-hu" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-hy" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-id" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-is" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-it-CH" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-it" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-ja" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-ka" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-kh" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-kk" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-kr" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-lt" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-lv" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-me" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-mk" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-ms" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-nb" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-nl-BE" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-nl" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-no" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-pl" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-pt-BR" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-pt" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-ro" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-rs-latin" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-rs" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-ru" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-sk" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-sl" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-sq" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-sr-latin" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-sr" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-sv" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-sw" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-th" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-tr" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-uk" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-vi" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-zh-CN" : [ "jquery", "bootstrap-datepicker" ],
+                    "bootstrap-datepicker-zh-TW" : [ "jquery", "bootstrap-datepicker" ]
+                }
             }
         </requirejs>
     </properties>
-    
+
     <dependencies>
       <dependency>
         <groupId>org.webjars</groupId>
