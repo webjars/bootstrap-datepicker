@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>bootstrap-datepicker</artifactId>
-    <version>1.4.1-SNAPSHOT</version>
+    <version>1.5.0-SNAPSHOT</version>
     <name>Bootstrap Datepicker</name>
     <description>WebJar for Bootstrap Datepicker</description>
     <url>http://webjars.org</url>
@@ -41,7 +41,7 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstreamVersion>1.4.0</upstreamVersion>
+        <upstreamVersion>1.5.0</upstreamVersion>
         <sourceUrl>https://github.com/eternicode/bootstrap-datepicker/releases/download/v${upstreamVersion}/bootstrap-datepicker-${upstreamVersion}-dist.zip</sourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
         <requirejs>
